@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>Seu Pedido</title>
+    <style>
+      label{ 
+        font-size: 15px;
+        font-family: Arial;
+        color: rgba(51,51,51,.9);
+        display: inline-block;
+        font-weight: bold;
+        margin: 16px 0px 0px;
+      }
+      select{
+        width: 582.172px;
+        padding: 13px 11px;
+        border-radius: 6px;
+        border: 1px solid rgba(19,147,246,.5);
+        font-family: Arial;
+        font-size: 15px;background-color: #eff4fa;
+      }
+      input{
+        background-color: #eff4fa;
+        border: 1px solid rgba(19,147,246,.5);
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 13px 11px;
+        width: 582.172px;
+      }
+      #botao{
+        background-color: #1393f6;
+        color: #fff;
+        margin: 16px 0px 0px;
+        font-weight: bold;
+        font-family: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/dados" method="GET">
+      <table align="center">
+        <tr>
+          <td> 
+            <label>Qual será o serviço?</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="Qual será o serviço?" required oninvalid="this.setCustomValidity('Este campo é requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+              <option value="">Tipo de serviço</option>
+              <option value="Coloração">Coloração</option>
+              <option value="Corte">Corte</option>
+              <option value="Escova">Escova</option>  
+              <option value="Escova progressiva/definitiva">Escova progressiva/definitiva</option>
+              <option value="Luzes">Luzes</option>
+              <option value="Manicure">Manicure</option>
+              <option value="Pedicure">Pedicure</option>
+              <option value="Penteado">Penteado</option>
+            </select>
+          </td>
+        </tr>
+          
+        <tr>
+            <td>
+            <label>Para quem será o serviço?</label>
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="Para quem será o serviço?">
+              <option value="">Indique para quem será o serviço</option>
+              <option value="Criança">Criança</option>
+              <option value="Homem">Homem</option>
+              <option value="Mulher">Mulher</option>  
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+            <label>O serviço será para quantas pessoas?</label>
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="O serviço será para quantas pessoas?">
+              <option value="">Indique o número de pessoas</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="Mais de 3">Mais de 3</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+            <label>Para quando você precisa deste serviço?</label>
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="Para quando você precisa deste serviço?" required oninvalid="this.setCustomValidity('Este campo é requerido')" onchange="try{setCustomValidity('')}catch(e){}">
+              <option value="">Indique o prazo do serviço</option>
+              <option value="Hoje ou nos próximos dias">Hoje ou nos próximos dias</option>
+              <option value="Nos próximos 30 dias">Nos próximos 30 dias</option>
+              <option value="Nos próximos 3 meses">Nos próximos 3 meses</option>
+              <option value="Ainda não tenho previsão">Ainda não tenho previsão</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+            <label>Informações Adicionais</label>
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="big_text" name="Informações Adicionais" placeholder="Descreva o que você precisa">
+          </td>
+        </tr>
+
+        <tr>
+            <td>
+            <input id="botao" type="submit" value="BUSCAR PROFISSIONAIS">
+          </td>
+        </tr>
+      </table>
+    </form> 
+  </body>
+</html>

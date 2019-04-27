@@ -1,0 +1,18 @@
+{
+  "name": "frontend-challenge-master",
+  "version": "1.0.0",
+  "description": "#### O que é permitido: - ES6 - Linters no geral tanto para JS como para CSS - Task runners/build tools como Webpack, Gulp, Grunt e afins.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Thais Lopes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
